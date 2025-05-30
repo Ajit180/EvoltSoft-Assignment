@@ -3,7 +3,11 @@ import { verifyJWT } from "../utils/common/jwt.js";
 
 export const isAuthenticated =async(req,res,next)=>{
     
-    const token = req.headers["x-access-token"];
+    
+
+    try {
+
+        const token = req.headers["x-access-token"];
 
     if(!token){
         return res.status(400).json({
@@ -11,8 +15,6 @@ export const isAuthenticated =async(req,res,next)=>{
             message:"token is requrired"
         })
     }
-
-    try {
 
         const response = verifyJWT(token);
 
