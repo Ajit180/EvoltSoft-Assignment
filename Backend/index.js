@@ -14,7 +14,8 @@ const allowedOrigins = [
     'http://localhost:5175',
     'http://localhost:3000',
     'https://evolt-soft-assignment.vercel.app/',
-    'https://evolt-soft-assignment.vercel.app'
+    'https://evolt-soft-assignment.vercel.app',
+    'https://evolt-soft-assignment.vercel.app/auth/signin'
   ];
 
 
