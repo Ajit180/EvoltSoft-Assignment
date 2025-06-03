@@ -1,5 +1,5 @@
-import Auth from './pages/auth/Auth'
-import { SigninContainer } from '@/pages/auth/signin'
+import Auth from '@/pages/auth/Auth'
+import { SigninContainer } from '@/pages/auth/Signin'
 import { SignupContainer } from '@/pages/auth/Signup'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
@@ -12,7 +12,7 @@ const AppRoutes = () => {
     <Routes>
         <Route path='auth/signup' element={<Auth><SignupContainer/></Auth>}/>
         <Route path='auth/signin' element={<Auth><SigninContainer/></Auth>}/>
-        <Route path='auth/product' element ={<ProtectedRoute><Station/></ProtectedRoute>}/>
+        <Route path='auth/station' element ={<ProtectedRoute><Station/></ProtectedRoute>}/>
        
     </Routes>
   )
