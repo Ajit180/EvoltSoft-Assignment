@@ -1,7 +1,7 @@
 import { useMutation } from "@tanstack/react-query"
 
 import useAuthStore from "../Store/useAuth"
-import { siginRequest } from "@/api/auth"
+import { siginRequest } from "@/api/Auth";
 
 
 export const useSignin = ()=>{
