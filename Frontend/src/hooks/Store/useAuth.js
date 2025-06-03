@@ -19,9 +19,6 @@ const useAuthStore = create((set) => ({
       const token = localStorage.getItem("token");
 
 
-       console.log("📦 localStorage user:", user);
-    console.log("📦 localStorage token:", token);
-
       // If user is "undefined", treat as invalid
       if (!user || user === "undefined" || !token) {
         throw new Error("Invalid user or token in localStorage");
