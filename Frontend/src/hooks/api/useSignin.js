@@ -10,6 +10,8 @@ export const useSignin = ()=>{
         mutationFn:siginRequest,
         onSuccess:(response)=>{
          console.log('Sigin Successfully',response);
+         console.log('User is ',response.data);
+         console.log('Token is ',response.token);
          //save user and token in localstorage
          localStorage.setItem('token',response.token);
          localStorage.setItem('user',JSON.stringify(response.user));

@@ -48,7 +48,14 @@ export const signinUserService = async(userDetails)=>{
         }
 
         const token = generatejwtToken({email:user.email,_id:user._id,username:user.username,role:user.role||"user"});
-        return token;
+        
+        return {
+            username:user.username,
+            email:user.email,
+            _id:user._id,
+            role:user.role,
+            token:token
+        }
         
       } catch (error) {
         throw error;    
