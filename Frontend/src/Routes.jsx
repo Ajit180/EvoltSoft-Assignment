@@ -1,6 +1,6 @@
 import Auth from '@/pages/auth/auth'
 import { SigninContainer } from '@/pages/auth/signin'
-import { SignupContainer } from './pages/auth/Signup'
+import { SignupContainer } from '@/pages/auth/Signup'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import ProtectedRoute from './components/Component/ProtectedRoute'
