@@ -2,7 +2,6 @@
 import AppRoutes from '@/Routes'
 import './App.css'
 import { QueryClientProvider , QueryClient} from '@tanstack/react-query'
-import { SignupContainer } from './pages/auth/Signup';
 
 function App() {
  
